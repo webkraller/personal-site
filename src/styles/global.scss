@@ -87,6 +87,7 @@ body {
 .brand-icon {
   font-size: 2.75rem;
   color: $gray-700;
+  max-height: 50px;
   &:hover {
     color: $faded-red;
   }
@@ -104,4 +105,11 @@ body {
 
 .unemployed {
   font-size: 1.35rem;
+}
+
+mark {
+  padding: 0;
+  background-color: $white;
+  color: $burnt-orange;
+  font-weight: bolder;
 }

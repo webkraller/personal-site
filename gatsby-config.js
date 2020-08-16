@@ -7,13 +7,27 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `John Doe`,
-    author: `John Doe`,
-    firstName: `John`,
-    lastName: `Doe`,
-    description: `John Doe's personal site`,
+    title: `Alex Krall`,
+    author: `Alex Krall`,
+    firstName: `Alex`,
+    lastName: `Krall`,
+    description: `Alex Krall's personal site`,
+    contactEmail: `axkrall@gmail.com`,
     occupation: `Software Engineer`,
-    keywords: [`John`, `Doe`, `Personal`, `Blog`, `Resume`, `Projects`, `Work`],
+    tagline: [
+      `Rapidly validating technology dreams for interdisciplinary teams`,
+      `I also love memes`,
+    ],
+    keywords: [
+      `Alex`,
+      `Krall`,
+      `Alex Krall`,
+      `Resume`,
+      `Projects`,
+      `Work`,
+      `Software Development`,
+      `MVP`,
+    ],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
     unemployed: true,
@@ -25,19 +39,19 @@ module.exports = {
     ],
     readingList: [
       {
-        title: `Sapiens: A Brief History of Humankind`,
-        author: `Yuval Noah Harari`,
-        link: `https://www.goodreads.com/book/show/23692271-sapiens`,
+        title: `Oathbringer`,
+        author: `Brandon Sanderson`,
+        link: `https://www.goodreads.com/book/show/34002132-oathbringer`,
       },
       {
-        title: `Behave: The Biology of Humans at our Best and Worst`,
-        author: `Robert Sapolsky`,
-        link: `https://www.goodreads.com/book/show/31170723-behave`,
+        title: `So You Want To Talk About Race`,
+        author: `Ijeoma Oluo`,
+        link: `https://www.goodreads.com/book/show/35099718-so-you-want-to-talk-about-race`,
       },
       {
-        title: `The Gene: An Intimate History`,
-        author: `Siddhartha Mukeherjee`,
-        link: `https://www.goodreads.com/book/show/27276428-the-gene`,
+        title: `The Fifth Season`,
+        author: `N.K. Jemisin`,
+        link: `https://www.goodreads.com/book/show/19161852-the-fifth-season`,
       },
     ],
     showsList: [
@@ -75,8 +89,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `John Doe's Personal Site`,
-        short_name: `J.Doe`,
+        name: `Alex Krall's Personal Site`,
+        short_name: `A.Krall`,
         description: `This is my personal site.`,
         start_url: `/`,
         background_color: `#fff`,
@@ -99,6 +113,18 @@ module.exports = {
       options: {
         color: `tomato`,
         showSpinner: true,
+      },
+    },
+    {
+      resolve: "gatsby-source-graphql",
+      options: {
+        // Arbitrary name for the remote schema Query type
+        typeName: "GraphCMS",
+        // Field under which the remote schema will be accessible. You'll use this in your Gatsby query
+        fieldName: "graphcms",
+        // Url to query from
+        url:
+          "https://api-us-east-1.graphcms.com/v2/ckdenpclep3u301z8bzdjeiuq/master",
       },
     },
   ],
