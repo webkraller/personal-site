@@ -7,13 +7,16 @@
 
 $themes: (
   light: (
-    backgroundColor: white,
+    backgroundColor: $gray-200,
     footerBackground: white,
-    navBackground: $gray-100,
+    navBackground: $tie-blue,
+    navTextColor: white,
     secondary: $gray-900,
     textColor: $black,
-    firstName: $black,
+    blockquoteColor: $apple-core,
+    firstName: $burnt-orange,
     lastName: $burnt-orange,
+    taglineColor: $tie-blue,
     linkHover: $gray-800,
     themeColor: $dark-blue,
     heartColor: pink,
@@ -92,6 +95,12 @@ $themes: (
   }
 }
 
+.tagline {
+  @include themify($themes) {
+    color: themed("taglineColor");
+  }
+}
+
 // header
 .navbar,
 .navbar div {
@@ -100,11 +109,20 @@ $themes: (
   }
 }
 
+.navbar-brand {
+  @include themify($themes) {
+    color: themed("navTextColor") !important;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
 .nav-links a {
   @include themify($themes) {
-    color: themed("linkHover") !important;
+    color: themed("navTextColor") !important;
     &:hover {
-      text-decoration: underline themed("hrefColor") solid;
+      cursor: pointer;
     }
   }
 }
@@ -199,5 +217,21 @@ div {
 p {
   @include themify($themes) {
     color: themed("textColor");
+  }
+}
+
+mark {
+  @include themify($themes) {
+    color: themed("textColor");
+    padding: 0;
+    background-color: themed("backgroundColor");
+    color: $burnt-orange;
+    font-weight: bold;
+  }
+}
+
+blockquote {
+  @include themify($themes) {
+    background-color: themed("blockquoteColor");
   }
 }

@@ -18,6 +18,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.container,
+.container-fluid {
+  padding: 0;
+}
+
 .app-container * {
   transition: color 0.45s ease-in-out;
   transition: background 0.45s ease-in-out;
@@ -107,9 +120,47 @@ body {
   font-size: 1.35rem;
 }
 
-mark {
-  padding: 0;
-  background-color: $white;
-  color: $burnt-orange;
-  font-weight: bolder;
+blockquote {
+  padding: 1em;
+  background-color: grey;
+}
+
+/** Youtube Embed **/
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/** DESKTOP RESIZINGS **/
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .container,
+  .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .navbar-brand {
+    margin-left: 3rem;
+  }
 }

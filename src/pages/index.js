@@ -21,7 +21,6 @@ export default ({ data }) => {
     firstName,
     lastName,
     tagline,
-    author,
     occupation,
     contactEmail,
     readingList,
@@ -40,54 +39,70 @@ export default ({ data }) => {
           src="../../images/alex.jpg"
           alt="Alex Krall"
         />
-        <h1
-          style={{
-            fontSize: "4rem",
-            color: "black",
-          }}
-        >
+        <h1>
           <span className="first-name">{firstName}</span>&nbsp;
           <span className="last-name">{lastName}</span>
         </h1>
         <article className="w-75 m-auto pt-2 text-justify">
-          <h4 className="text-center">
-            {tagline.map((attr, i) => (
-              <div key={attr}>
-                &nbsp;<b>{attr}</b>&nbsp;
-                {i < tagline.length - 1}
-              </div>
-            ))}
-          </h4>
+          <h2>
+            <div className="tagline text-center">
+              {tagline.map((attr, i) => (
+                <div key={attr}>
+                  &nbsp;<b>{attr}</b>&nbsp;
+                  {i < tagline.length - 1}
+                </div>
+              ))}
+            </div>
+          </h2>
           <p className="i-5 mt-4 pt-2">
             Alex is an <mark>MVP engineering veteran</mark> that prioritizes{" "}
-            <mark>data-driven decisions</mark>, with over 10 years leading
-            software product teams to learn, adapt, and grow. Trained in equal
-            parts computer science/software development and the{" "}
-            <a target="_BLANK" href="https://twitter.com/billaulet">
+            <mark>data-driven decisions</mark> to rapidly validate and scale
+            software products. Alex leverages his equal parts training in
+            computer science/software development and{" "}
+            <a
+              href="http://theleanstartup.com/principles"
+              target="_blank"
+              rel=" noopener noreferrer"
+            >
+              The Lean Startup
+            </a>{" "}
+            &amp;{" "}
+            <a
+              href="https://twitter.com/billaulet"
+              target="_blank"
+              rel=" noopener noreferrer"
+            >
               Bill Aulet
             </a>{" "}
-            entrepraneur method, Alex leverages his
+            entrepraneurial methods to supercharge businesses and products
+            beyond traditional resource constraints.
           </p>
           <p className="i-5">
-            <mark>
-              Security considerations are a fundamental aspect of software
-              products
-            </mark>{" "}
-            but just because something is done fast doesn't mean it can't be
-            done right from the get-go.
+            With over 10 years leading cross-functional product teams, Alex
+            firmly believes in <mark>leading with empathy</mark>. People can
+            truly build amazing things when their <mark>holistic life</mark> is
+            supported by their workplace.
           </p>
           <p className="i-5">
-            Alex believes in a <mark>healthy work/life balance</mark> and that
-            people can truly build amazing things when they are supported to{" "}
-            <mark>live a holistic life</mark>. He is excited that surrealist
-            humor is back in vogue, and is constantly fascinated at how memes
-            ripple and morph throughout society.
+            Alex loves his wife, niche sideprojects, and the frequent
+            intersection of the both. He is excited that surrealist humor is
+            back in vogue, and is constantly fascinated at how memes ripple and
+            morph throughout society.{" "}
           </p>
-          <p className="i-5">
-            Check out my <Link to="/projects">projects</Link> to see what I've
-            been up to! Or check out my <Link to="/resume">resume</Link> to see
-            my work experience!
-          </p>
+          <blockquote>
+            "I am greatly saddened by the prospect that humanity may never
+            produce a better software commercial than Bill and Ed's Excellent
+            Cross Promotional Adventure."
+            <p>—Alex Krall</p>
+            <div class="embed-container">
+              <iframe
+                src="https://www.youtube.com/embed/5ycx9hFGHog"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </blockquote>
         </article>
         <article className="w-75 m-auto">
           {unemployed && (
@@ -150,7 +165,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="mailto:johndoe@gmail.com"
+            href={"mailto:" + contactEmail}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -196,7 +211,7 @@ export const query = graphql`
         lastName
         occupation
         tagline
-        author
+        contactEmail
         readingList {
           title
           author

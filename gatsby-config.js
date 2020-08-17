@@ -13,10 +13,10 @@ module.exports = {
     lastName: `Krall`,
     description: `Alex Krall's personal site`,
     contactEmail: `axkrall@gmail.com`,
-    occupation: `Software Engineer`,
+    occupation: `Software Engineering Leadership`,
     tagline: [
-      `Rapidly validating technology dreams for interdisciplinary teams`,
-      `I also love memes`,
+      `Leading software product teams to achieved dreams. 💪`,
+      `I also love memes.`,
     ],
     keywords: [
       `Alex`,
