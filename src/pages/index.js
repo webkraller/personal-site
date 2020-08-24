@@ -1,5 +1,5 @@
 import React, { useContext } from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import ThemeContext from "../utils/theme"
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
@@ -21,7 +21,6 @@ export default ({ data }) => {
     firstName,
     lastName,
     tagline,
-    occupation,
     contactEmail,
     readingList,
   } = data.site.siteMetadata
@@ -81,11 +80,10 @@ export default ({ data }) => {
             amazing things when their <mark>holistic life</mark> is supported by
             their workplace. Every team has different needs, and my long-time
             experience in <mark>leading distributed teams</mark> has helped me
-            develop my framework for support, whether local or half a globe
-            away.
+            develop a framework for support, whether local or half a globe away.
           </p>
           <p className="i-5">
-            I love my wife, Amber, themed sideprojects, and the{" "}
+            I love my wife Amber, themed sideprojects, and the{" "}
             <a
               href="/images/capn-and-grandmaster-cosplay.jpg"
               target="_blank"
@@ -183,7 +181,7 @@ export default ({ data }) => {
             <FontAwesomeIcon
               icon={["fas", "envelope"]}
               className="icons mail"
-              title="e-mail"
+              title="E-mail"
             />
           </a>
           <a href="../../alex-krall-resume.pdf" target="_blank" download>

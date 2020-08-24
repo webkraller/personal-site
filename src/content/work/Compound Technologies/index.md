@@ -6,11 +6,12 @@ tags:
   [
     "Product Lifecycle",
     "Team Management",
-    "UI/UX",
-    "PHP",
+    "CakePHP",
+    "Node.js",
     "AWS",
-    "React",
-    "DBA",
+    "React / Redux",
+    "Postgres / MySql",
+    "UI/UX",
   ]
 startDate: "2017-08-15"
 endDate: "2020-09-01"

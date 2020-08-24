@@ -19,6 +19,7 @@ export default ({ data }) => {
             style={{ fontSize: "2rem" }}
             icon={["fas", "file-download"]}
             className="icons file"
+            title="Download Resume as PDF"
           />
         </a>
       </PageTitle>
