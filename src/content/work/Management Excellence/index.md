@@ -20,6 +20,7 @@ endDate: "2018-06-23"
 Management Excellence was a one-stop shop for companies trying to improve their business via technology solutions. This company directly evolved into <a href="http://kppropertyadvisors.com/">KP Property Advisors</a>.
 
 <ul>
-<li>Lead development on a diverse portfolio of tech projects ranging from commercial properties, massage chairs, electronic bingo, and beyond.</li>
+<li>Led development on a diverse portfolio of tech projects ranging from commercial properties, massage chairs, electronic bingo, and beyond.</li>
+<li>Designed numerous system solutions, involving software and hardware interactions.</li>
 <li>Oversaw both local and overseas development teams.</li>
 </ul>

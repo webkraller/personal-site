@@ -54,7 +54,7 @@ export default ({ data }) => {
             </div>
           </h2>
           <p className="i-5 mt-4 pt-2">
-            Hey there, I am an <mark>MVP product engineering veteran</mark> that
+            Hey there, I am an <mark>MVP engineering veteran</mark> that
             prioritizes <mark>data-driven decisions</mark> to rapidly validate
             and scale software products. I leverage my equal parts background in
             computer science/software development and{" "}
@@ -186,7 +186,7 @@ export default ({ data }) => {
               title="e-mail"
             />
           </a>
-          <a href="../../resume.pdf" target="_blank" download>
+          <a href="../../alex-krall-resume.pdf" target="_blank" download>
             <FontAwesomeIcon
               icon={["fas", "file-alt"]}
               className="icons file"
