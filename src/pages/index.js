@@ -72,7 +72,7 @@ export default ({ data }) => {
             >
               Bill Aulet
             </a>{" "}
-            entrepraneurial methods to supercharge businesses and products.
+            entrepreneurial methods to supercharge businesses and products.
           </p>
           <p className="i-5">
             With over 10 years leading cross-functional product teams, I firmly
