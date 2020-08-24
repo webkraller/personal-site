@@ -35,8 +35,6 @@ export default ({ data }) => {
             <hr className="w-75" />
           </div>
         ))}
-        <h2 className="mb-4 mt-5">Education</h2>
-        <hr className="w-75" />
       </Container>
     </PageLayout>
   )
