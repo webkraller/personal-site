@@ -170,7 +170,7 @@ $themes: (
   }
 }
 
-.app-container {
+div {
   @include themify($themes) {
     background: themed("backgroundColor");
   }
