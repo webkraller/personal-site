@@ -9,19 +9,14 @@ $themes: (
   light: (
     backgroundColor: $gray-200,
     footerBackground: white,
-    navBackground: $tie-blue,
-    navTextColor: white,
-    secondary: $gray-900,
+    navBackground: $burnt-orange,
+    navTextColor: $gray-200,
     textColor: $black,
-    blockquoteColor: $apple-core,
-    firstName: $burnt-orange,
-    lastName: $burnt-orange,
+    titleColor: $burnt-orange,
+    markColor: $burnt-orange,
     taglineColor: $tie-blue,
-    linkHover: $gray-800,
     themeColor: $dark-blue,
-    heartColor: pink,
-    titleColor: $dark-blue,
-    hrefColor: $dark-blue,
+    hrefColor: $tie-blue,
     github: $black,
     linkedin: $linkedin-blue,
     fcc: $fcc-green,
@@ -34,16 +29,13 @@ $themes: (
   dark: (
     backgroundColor: #222,
     footerBackground: #222,
-    secondary: $gray-100,
     navBackground: $dark-gray,
-    linkHover: $gray-200,
     textColor: $gray-300,
     firstName: $gray-100,
     lastName: $burnt-orange,
     titleColor: $white,
     hrefColor: $faded-red,
     themeColor: $dark-red,
-    heartColor: red,
     github: $empire-red,
     linkedin: $empire-red,
     fcc: $empire-red,
@@ -83,18 +75,6 @@ $themes: (
 
 /** CUSTOM THEMING BEGIN */
 
-.first-name {
-  @include themify($themes) {
-    color: themed("firstName");
-  }
-}
-
-.last-name {
-  @include themify($themes) {
-    color: themed("lastName");
-  }
-}
-
 .tagline {
   @include themify($themes) {
     color: themed("taglineColor");
@@ -112,6 +92,7 @@ $themes: (
 .navbar-brand {
   @include themify($themes) {
     color: themed("navTextColor") !important;
+    font-weight: normal;
     &:hover {
       cursor: pointer;
     }
@@ -121,6 +102,7 @@ $themes: (
 .nav-links a {
   @include themify($themes) {
     color: themed("navTextColor") !important;
+    font-weight: normal;
     &:hover {
       cursor: pointer;
     }
@@ -130,18 +112,6 @@ $themes: (
 .footer {
   @include themify($themes) {
     background: themed("backgroundColor");
-  }
-}
-
-.heart {
-  @include themify($themes) {
-    color: themed("heartColor");
-  }
-}
-
-.watch-list-title {
-  @include themify($themes) {
-    color: themed("secondary");
   }
 }
 
@@ -170,7 +140,9 @@ $themes: (
 
 .resume-tags {
   @include themify($themes) {
+    color: themed("navTextColor");
     background: themed("navBackground");
+    font-weight: normal;
   }
 }
 
@@ -198,19 +170,24 @@ $themes: (
   }
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+.app-container {
+  @include themify($themes) {
+    background: themed("backgroundColor");
+  }
+}
+
+h1 {
   @include themify($themes) {
     color: themed("titleColor");
   }
 }
 
-div {
+h2,
+h3,
+h4,
+h5 {
   @include themify($themes) {
-    background: themed("backgroundColor");
+    color: themed("taglineColor");
   }
 }
 
@@ -222,16 +199,16 @@ p {
 
 mark {
   @include themify($themes) {
-    color: themed("textColor");
+    color: themed("markColor");
     padding: 0;
     background-color: themed("backgroundColor");
-    color: $burnt-orange;
     font-weight: bold;
   }
 }
 
-blockquote {
+a {
   @include themify($themes) {
-    background-color: themed("blockquoteColor");
+    color: themed("hrefColor");
+    font-weight: bold;
   }
 }

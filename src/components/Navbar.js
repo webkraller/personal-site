@@ -12,9 +12,9 @@ export default () => {
       <Navbar.Brand as={Link} to="/">
         <Image
           fluid
-          src="../../images/alex.jpg"
+          src="../../images/alex-cropped.png"
           alt="Alex Krall"
-          className="brand-icon"
+          className="brand-icon rounded"
         />
         Alex Krall
       </Navbar.Brand>

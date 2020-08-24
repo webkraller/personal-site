@@ -49,42 +49,9 @@ h2 {
   text-indent: 5vmin;
 }
 
-/** Toggle Switch Styling START */
-.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
-  border: none;
-  box-shadow: none;
+.jumbotron {
+  margin-bottom: 0px;
 }
-
-.custom-control-input:focus ~ .custom-control-label::before {
-  box-shadow: none;
-}
-
-.custom-control-input ~ .custom-control-label {
-  outline: none;
-  border: none;
-  box-shadow: none;
-}
-
-// light mode
-.custom-control-input ~ .custom-control-label::before {
-  border-color: $yellow;
-  background-color: $yellow;
-}
-
-.custom-switch .custom-control-input ~ .custom-control-label::after {
-  background-color: $white;
-}
-
-// dark mode
-.custom-control-input:checked ~ .custom-control-label::before {
-  border-color: $black;
-  background-color: $black;
-}
-
-.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
-  background-color: $red;
-}
-/** Toggle Switch Styling END */
 
 /** Home Page Icon Styling START */
 .icons-container a {
@@ -92,7 +59,7 @@ h2 {
 }
 
 .icons {
-  font-size: 3.75rem;
+  font-size: 2rem;
   margin: 0.1rem;
   color: $gray-600;
 }
@@ -104,14 +71,18 @@ h2 {
   &:hover {
     color: $faded-red;
   }
-  &.empire {
-    border-radius: 50%;
-    color: $white;
-    background: $black;
-    &:hover {
-      color: $black;
-      background: $white;
-    }
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-20deg);
   }
 }
 /** Home Page Icon Styling END */
@@ -142,7 +113,12 @@ blockquote {
   width: 100%;
   height: 100%;
 }
-
+.print-only {
+  display: none;
+}
+.web-only {
+  display: block;
+}
 /** DESKTOP RESIZINGS **/
 
 @media only screen and (min-width: 768px) {
@@ -151,7 +127,11 @@ blockquote {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
   }
 
   .container,

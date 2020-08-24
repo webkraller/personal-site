@@ -15,7 +15,7 @@ module.exports = {
     contactEmail: `axkrall@gmail.com`,
     occupation: `Software Engineering Leadership`,
     tagline: [
-      `Leading software product teams to achieved dreams. 💪`,
+      `Leading software product teams to achieve dreams. 💪`,
       `I also love memes.`,
     ],
     keywords: [
@@ -60,16 +60,6 @@ module.exports = {
         author: `Micheal DiMartino, Bryan Konietzko`,
         link: `https://www.imdb.com/title/tt0417299/`,
       },
-      {
-        title: `Love, Death & Robots`,
-        author: `Tim Miller`,
-        link: `https://www.imdb.com/title/tt9561862/`,
-      },
-      {
-        title: `Star Wars: The Clone Wars`,
-        author: `George Lucas, Dave Filoni`,
-        link: `https://www.imdb.com/title/tt0458290/`,
-      },
     ],
   },
   plugins: [
@@ -96,7 +86,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: `${__dirname}/static/favicon.ico`, // This path is relative to the root of the site.
+        icon: `${__dirname}/static/icons/flexed-biceps.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,

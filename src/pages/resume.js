@@ -22,7 +22,9 @@ export default ({ data }) => {
           />
         </a>
       </PageTitle>
-      <Container className="mt-5 pt-3" fluid>
+      <Container className="pt-3" fluid>
+        <h2 className="m-4">Experience</h2>
+        <hr className="w-75" />
         {history.map(({ node }) => (
           <div key={node.id}>
             <WorkHistory
@@ -33,6 +35,8 @@ export default ({ data }) => {
             <hr className="w-75" />
           </div>
         ))}
+        <h2 className="mb-4 mt-5">Education</h2>
+        <hr className="w-75" />
       </Container>
     </PageLayout>
   )
@@ -42,7 +46,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(
       filter: { fileAbsolutePath: { regex: "/work/" } }
-      sort: { fields: [frontmatter___startDate], order: DESC }
+      sort: { fields: [frontmatter___endDate], order: DESC }
     ) {
       edges {
         node {

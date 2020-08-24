@@ -40,8 +40,7 @@ export default ({ data }) => {
           alt="Alex Krall"
         />
         <h1>
-          <span className="first-name">{firstName}</span>&nbsp;
-          <span className="last-name">{lastName}</span>
+          {firstName} {lastName}
         </h1>
         <article className="w-75 m-auto pt-2 text-justify">
           <h2>
@@ -55,9 +54,9 @@ export default ({ data }) => {
             </div>
           </h2>
           <p className="i-5 mt-4 pt-2">
-            Alex is an <mark>MVP engineering veteran</mark> that prioritizes{" "}
-            <mark>data-driven decisions</mark> to rapidly validate and scale
-            software products. Alex leverages his equal parts training in
+            Hey there, I am an <mark>MVP product engineering veteran</mark> that
+            prioritizes <mark>data-driven decisions</mark> to rapidly validate
+            and scale software products. I leverage my equal parts background in
             computer science/software development and{" "}
             <a
               href="http://theleanstartup.com/principles"
@@ -74,35 +73,59 @@ export default ({ data }) => {
             >
               Bill Aulet
             </a>{" "}
-            entrepraneurial methods to supercharge businesses and products
-            beyond traditional resource constraints.
+            entrepraneurial methods to supercharge businesses and products.
           </p>
           <p className="i-5">
-            With over 10 years leading cross-functional product teams, Alex
-            firmly believes in <mark>leading with empathy</mark>. People can
-            truly build amazing things when their <mark>holistic life</mark> is
-            supported by their workplace.
+            With over 10 years leading cross-functional product teams, I firmly
+            believe in <mark>leading with empathy</mark>. People can truly build
+            amazing things when their <mark>holistic life</mark> is supported by
+            their workplace. Every team has different needs, and my long-time
+            experience in <mark>leading distributed teams</mark> has helped me
+            develop my framework for support, whether local or half a globe
+            away.
           </p>
           <p className="i-5">
-            Alex loves his wife, niche sideprojects, and the frequent
-            intersection of the both. He is excited that surrealist humor is
-            back in vogue, and is constantly fascinated at how memes ripple and
-            morph throughout society.{" "}
+            I love my wife, Amber, themed sideprojects, and the{" "}
+            <a
+              href="/images/capn-and-grandmaster-cosplay.jpg"
+              target="_blank"
+              rel=" noopener noreferrer"
+            >
+              frequent
+            </a>{" "}
+            <a
+              href="https://www.youtube.com/watch?v=9x6w1iXAw6M"
+              target="_blank"
+              rel=" noopener noreferrer"
+            >
+              intersection
+            </a>{" "}
+            <a
+              href="/images/madmax-cosplay.jpg"
+              target="_blank"
+              rel=" noopener noreferrer"
+            >
+              of both.
+            </a>{" "}
+            I am excited that{" "}
+            <a
+              href="https://knowyourmeme.com/memes/why-is-millennial-humor-so-weird"
+              target="_blank"
+              rel=" noopener noreferrer"
+            >
+              surrealist humor
+            </a>{" "}
+            is back in vogue, and am constantly fascinated at how memes ripple
+            and morph throughout society. I am greatly saddened by the prospect
+            that humanity may never produce a better software commercial than{" "}
+            <a
+              href="https://www.youtube.com/watch?v=5ycx9hFGHog"
+              target="_blank"
+              rel=" noopener noreferrer"
+            >
+              Bill and Ed's Excellent Cross Promotional Adventure.
+            </a>
           </p>
-          <blockquote>
-            "I am greatly saddened by the prospect that humanity may never
-            produce a better software commercial than Bill and Ed's Excellent
-            Cross Promotional Adventure."
-            <p>—Alex Krall</p>
-            <div class="embed-container">
-              <iframe
-                src="https://www.youtube.com/embed/5ycx9hFGHog"
-                frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </blockquote>
         </article>
         <article className="w-75 m-auto">
           {unemployed && (
@@ -111,8 +134,7 @@ export default ({ data }) => {
               <p className="unemployed">
                 <small>
                   I am <b>currently looking for new opportunities</b>! If you
-                  like what you <Link to="/resume">see</Link>, let's get
-                  in&nbsp;
+                  like what you see, let's get in&nbsp;
                   <a
                     href={"mailto:" + contactEmail}
                     target="_blank"
@@ -126,13 +148,13 @@ export default ({ data }) => {
             </>
           )}
           <hr />
-          <h5 className="watch-list-title pt-4">Exciting current reads:</h5>
+          <h5 className="watch-list-title pt-4">Books I've just read:</h5>
           <ul style={{ fontSize: "0.9rem", listStyle: "none" }}>{bookLinks}</ul>
         </article>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
           <a
-            href="https://www.github.com"
+            href="https://www.github.com/webkraller/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -143,7 +165,7 @@ export default ({ data }) => {
             />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/alex-krall/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -151,17 +173,6 @@ export default ({ data }) => {
               icon={["fab", "linkedin"]}
               className="icons linkedin"
               title="LinkedIn"
-            />
-          </a>
-          <a
-            href="https://www.hackerrank.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "hackerrank"]}
-              className="icons hr"
-              title="Hackerrank"
             />
           </a>
           <a

@@ -12,13 +12,13 @@ const CompanyCard = ({ frontmatter, image }) => {
           maxHeight: "15vmax",
           maxWidth: "15vmax",
         }}
-        className="m-auto"
+        className="m-auto web-only"
       />
       <div className="md-font">
-        <h2 className="m-auto pt-2">{company}</h2>
+        <h3 className="m-auto pt-2">{company}</h3>
         <h5 className="text-muted">{location}</h5>
-        <h4 className="mt-2">{position}</h4>
-        <h5 className="text-muted mt-2">
+        <h3 className="mt-2 mb-0">{position}</h3>
+        <h5 className="text-muted">
           {startDate}-{endDate}
         </h5>
       </div>
@@ -41,17 +41,13 @@ export default ({ html, frontmatter, image }) => {
         </Col>
       </Row>
       <Row>
-        <Col className="col-md-4 col-1"></Col>
-        <Col className="col-md-8 col-1">
-          <div className="d-inline-flex">
-            {frontmatter.tags.map(tag => (
-              <Badge key={tag} pill className="mr-2 p-0 px-3 resume-tags">
-                <h4>
-                  <small>{tag}</small>
-                </h4>
-              </Badge>
-            ))}
-          </div>
+        <Col className="col-md-4 col-12"></Col>
+        <Col className="col-md-8 col-12" style={{ flexWrap: "wrap" }}>
+          {frontmatter.tags.map(tag => (
+            <Badge key={tag} pill className="mr-2 resume-tags">
+              {tag}
+            </Badge>
+          ))}
         </Col>
       </Row>
     </Container>
