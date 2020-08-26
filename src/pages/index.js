@@ -80,7 +80,7 @@ export default ({ data }) => {
             amazing things when their <mark>holistic life</mark> is supported by
             their workplace. Every team has different needs, and my long-time
             experience in <mark>leading distributed teams</mark> has helped me
-            develop a framework for support, whether local or half a globe away.
+            hone my framework for support, whether local or half a globe away.
           </p>
           <p className="i-5">
             I love my wife Amber, themed sideprojects, and the{" "}
