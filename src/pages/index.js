@@ -53,7 +53,7 @@ export default ({ data }) => {
             </div>
           </h2>
           <p className="i-5 mt-4 pt-2">
-            Hey there, I am an <mark>MVP engineering veteran</mark> that
+            Hey there, I am a <mark>software engineering veteran</mark> that
             prioritizes <mark>data-driven decisions</mark> to rapidly validate
             and scale software products. I leverage my equal parts background in
             computer science/software development and{" "}
