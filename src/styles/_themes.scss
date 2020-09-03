@@ -9,12 +9,12 @@ $themes: (
   light: (
     backgroundColor: $gray-200,
     footerBackground: white,
-    navBackground: $burnt-orange,
+    navBackground: $tie-blue,
     navTextColor: $gray-200,
     textColor: $black,
-    titleColor: $burnt-orange,
+    titleColor: $tie-blue,
     markColor: $burnt-orange,
-    taglineColor: $tie-blue,
+    taglineColor: $burnt-orange,
     themeColor: $dark-blue,
     hrefColor: $tie-blue,
     github: $black,
@@ -143,7 +143,7 @@ $themes: (
 .resume-tags {
   @include themify($themes) {
     color: themed("navTextColor");
-    background: themed("navBackground");
+    background: themed("taglineColor");
     font-weight: normal;
   }
 }
@@ -189,7 +189,7 @@ h3,
 h4,
 h5 {
   @include themify($themes) {
-    color: themed("taglineColor");
+    color: themed("titleColor");
   }
 }
 
