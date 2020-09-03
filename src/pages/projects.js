@@ -15,7 +15,7 @@ export default ({ data }) => {
       <SEO title="Projects" />
       <PageTitle title="Projects" />
       <Container className="text-left">
-        <section>
+        <section className="flex-wrap">
           {allProjects.map(({ node }) => (
             <div key={node.id} className="p-3">
               <ProjectLink
