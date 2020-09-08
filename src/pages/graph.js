@@ -5,8 +5,8 @@ import { Container } from "react-bootstrap"
 export default () => {
   return (
     <PageLayout>
-      <PageTitle>Math</PageTitle>
-      <Container className="px-5 mb-5 text-center">
+      <PageTitle>Graph</PageTitle>
+      <Container className="px-5 mb-5 embed-container">
         <iframe
           width="560"
           height="315"
